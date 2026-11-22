@@ -1,0 +1,101 @@
+
+body {
+    font-family: "Cairo", sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-img {
+    height: 550px;
+    object-fit: cover;
+    filter: brightness(45%);
+}
+
+.carousel-caption {
+    bottom: 25%;
+}
+
+.course-img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card {
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/* Dark Mode */
+
+html[data-bs-theme="dark"] body {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+html[data-bs-theme="dark"] #features,
+html[data-bs-theme="dark"] #faq {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+html[data-bs-theme="dark"] #courses,
+html[data-bs-theme="dark"] #contact {
+    background-color: #343a40 !important;
+    color: #f8f9fa;
+}
+
+html[data-bs-theme="dark"] .card,
+html[data-bs-theme="dark"] .accordion-item,
+html[data-bs-theme="dark"] .accordion-button,
+html[data-bs-theme="dark"] .modal-content {
+    background-color: #343a40;
+    color: #fff;
+}
+
+html[data-bs-theme="dark"] .accordion-button:not(.collapsed) {
+    background-color: #495057;
+    color: #fff;
+}
+
+html[data-bs-theme="dark"] .form-control,
+html[data-bs-theme="dark"] .form-select,
+html[data-bs-theme="dark"] textarea {
+    background-color: #212529;
+    color: #fff;
+    border-color: #6c757d;
+}
+
+html[data-bs-theme="dark"] .form-control::placeholder,
+html[data-bs-theme="dark"] textarea::placeholder {
+    color: #adb5bd;
+}
+
+html[data-bs-theme="dark"] .card-footer {
+    border-color: #555;
+}
+
+/* Responsive */
+
+@media (max-width: 576px) {
+    .hero-img {
+        height: 380px;
+    }
+
+    .carousel-caption {
+        bottom: 15%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 25px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+}
